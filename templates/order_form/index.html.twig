@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bestellung abrufen{% endblock %}
+
+{% block body %}
+    <h1>Bestellung abrufen</h1>
+    {{ form_start(form) }}
+        {{ form_row(form.orderId) }}
+        {{ form_row(form.submit) }}
+    {{ form_end(form) }}
+
+    {% if error %}
+        <div style="color: red;">{{ error }}</div>
+    {% endif %}
+
+    {% if orderImport %}
+        <h2>Bestelldaten</h2>
+        <ul>
+            <li>Order ID: {{ orderImport.orderId }}</li>
+            <li>Order Nummer: {{ orderImport.orderNumber }}</li>
+            <li>Gesamtwert: {{ orderImport.orderTotal }}</li>
+        </ul>
+    {% endif %}
+{% endblock %}
