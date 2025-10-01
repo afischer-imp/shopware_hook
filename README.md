@@ -33,11 +33,6 @@ Dieses Projekt ist eine Symfony-Anwendung zur Integration mit Shopware über die
 - Die Shop-Daten (Client-ID, Client-Secret, Shop-URL) werden in der Shop-Entity gepflegt.
 - Die Shopware-API muss für die Token-Generierung und den Bestellabruf freigeschaltet sein.
 
-## Troubleshooting
-- **401 Unauthorized:** Prüfe Client-ID und Client-Secret sowie die Freischaltung der Shopware-App.
-- **PROTOCOL_ERROR:** Erzwinge HTTP/1.1 im Token-Request und nutze `application/x-www-form-urlencoded` als Content-Type.
-- **Formularfehler:** Stelle sicher, dass das Symfony FormBundle installiert und aktiviert ist.
-
 ## Weiterentwicklung
 - Erweiterung um weitere Shopware-API-Endpunkte
 - Automatisierte Verarbeitung von Bestell-Hooks
