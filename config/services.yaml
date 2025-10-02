@@ -22,5 +22,13 @@ services:
         tags: [kernel.event_listener]
     App\Service\ShopwareOrderService:
         arguments:
-            $httpClient: '@http_client'
             $em: '@doctrine.orm.entity_manager'
+            $tokenService: '@App\Service\ShopwareTokenService'
+            $logger: '@logger'
+            $guzzleClient: '@GuzzleHttp\Client'
+    GuzzleHttp\Client:
+        class: GuzzleHttp\Client
+        arguments: []
+    App\Service\ShopwareTokenService:
+        arguments:
+            $guzzleClient: '@GuzzleHttp\Client'

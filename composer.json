@@ -9,6 +9,7 @@
         "ext-iconv": "*",
         "doctrine/doctrine-migrations-bundle": "^3.4.2",
         "doctrine/orm": "^3.5.2",
+        "guzzlehttp/guzzle": "^7.10",
         "shopware/app-bundle": "^4.2.2",
         "symfony/console": "7.3.*",
         "symfony/debug-bundle": "7.3.*",
