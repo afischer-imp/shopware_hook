@@ -1,4 +1,4 @@
-# Shopware Shopify App
+# Shopware App
 <%= shop.email %>
 <%= shop.url %>
 Dieses Projekt ist eine Symfony-Anwendung zur Integration mit Shopware über die Shopware App Bundle-Schnittstelle. Es ermöglicht das Abrufen und Speichern von Bestelldaten aus Shopware in einer lokalen Datenbank.
